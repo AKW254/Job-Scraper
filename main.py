@@ -10,9 +10,10 @@ from bs4 import BeautifulSoup
 # ── Configuration ──────────────────────────────────────────────────────────────
 BASE_URL  = ""
 JOBS_URL  = ""   
+#Check Header for your browser and PC
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 () "
+      
       
     )
 }
@@ -69,7 +70,7 @@ log = logging.getLogger(__name__)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# HTTP layer
+# HTTP layer(Check validity of Url)
 # ══════════════════════════════════════════════════════════════════════════════
 
 def fetch(url: str) -> requests.Response | None:
